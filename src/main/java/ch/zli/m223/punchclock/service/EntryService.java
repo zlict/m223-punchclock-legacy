@@ -21,4 +21,13 @@ public class EntryService {
     public List<Entry> findAll() {
         return entryRepository.findAll();
     }
+
+    /**
+     * Löscht den Eintrag mit der mitgegebenen Id wird gelöscht.
+     *
+     * @param id
+     */
+    public void deleteEntry(long id) {
+        entryRepository.deleteById(id);
+    }
 }
