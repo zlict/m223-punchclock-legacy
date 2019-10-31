@@ -7,7 +7,7 @@ plugins {
 
 group = 'ch.zli.m223'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '12'
+sourceCompatibility = '11'
 
 configurations {
 	developmentOnly
