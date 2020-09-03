@@ -1,12 +1,11 @@
 package ch.zli.m223.punchclock.service;
 
 import ch.zli.m223.punchclock.domain.Entry;
-import ch.zli.m223.punchclock.domain.exceptions.EntryNotFoundException;
+import ch.zli.m223.punchclock.exceptions.EntryNotFoundException;
 import ch.zli.m223.punchclock.repository.EntryRepository;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
-import javax.servlet.http.HttpServlet;
 import java.util.List;
 
 @Service
