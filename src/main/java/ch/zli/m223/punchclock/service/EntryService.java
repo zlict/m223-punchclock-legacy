@@ -22,7 +22,10 @@ public class EntryService {
     }
 
     public Entry updateEntry(Entry entry) {
-        return entryRepository.saveAndFlush(entry);
+        if(entryRepository.findById(entry.getId()).isPresent()) {
+            return entryRepository.saveAndFlush(entry);
+        }
+        throw new EntryNotFoundException();
     }
 
     public List<Entry> findAll() {
