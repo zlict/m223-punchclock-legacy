@@ -31,6 +31,12 @@ public class EntryController {
         return entryService.createEntry(entry);
     }
 
+    @PutMapping
+    @ResponseStatus(HttpStatus.OK)
+    public Entry updateEntry(@Valid @RequestBody Entry entry) {
+        return entryService.updateEntry(entry);
+    }
+
     @DeleteMapping(path = "{id}")
     @ResponseStatus(HttpStatus.OK)
     public void deleteEntry(@PathVariable("id") Long id){

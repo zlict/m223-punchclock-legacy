@@ -21,6 +21,10 @@ public class EntryService {
         return entryRepository.saveAndFlush(entry);
     }
 
+    public Entry updateEntry(Entry entry) {
+        return entryRepository.saveAndFlush(entry);
+    }
+
     public List<Entry> findAll() {
         return entryRepository.findAll();
     }
