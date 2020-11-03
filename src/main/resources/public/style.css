@@ -11,3 +11,7 @@ input[type='submit'], table {
 table {
     width: 40rem;
 }
+
+th {
+    text-align: start;
+}
