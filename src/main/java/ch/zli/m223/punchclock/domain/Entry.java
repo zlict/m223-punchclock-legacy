@@ -1,5 +1,6 @@
 package ch.zli.m223.punchclock.domain;
 
+import ch.zli.m223.punchclock.Validator.CheckInCheckOut;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
@@ -10,6 +11,7 @@ import javax.validation.constraints.AssertTrue;
 import java.time.LocalDateTime;
 
 @Entity
+@CheckInCheckOut
 public class Entry {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

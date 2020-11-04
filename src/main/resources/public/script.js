@@ -11,10 +11,6 @@ const createEntry = (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const entry = {};
-    formdata = formData;
-    console.log(formData);
-    console.log(e.target);
-    console.log(formData.get('category'));
     entry['checkIn'] = dateAndTimeToDate(formData.get('checkInDate'), formData.get('checkInTime'));
     entry['checkOut'] = dateAndTimeToDate(formData.get('checkOutDate'), formData.get('checkOutTime'));
     entry['category'] = { "id": formData.get('category')};
