@@ -1,7 +1,9 @@
 package ch.zli.m223.punchclock.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -25,6 +27,7 @@ public class User {
     @ManyToOne
     private Role role;
 
+    @JsonIgnore
     @OneToMany
     private Set<Entry> entries;
 }
