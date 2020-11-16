@@ -1,4 +1,4 @@
-package ch.zli.m223.punchclock.Validator;
+package ch.zli.m223.punchclock.validator;
 
 import ch.zli.m223.punchclock.domain.Entry;
 

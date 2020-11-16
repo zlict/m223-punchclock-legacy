@@ -1,4 +1,4 @@
-package ch.zli.m223.punchclock.Validator;
+package ch.zli.m223.punchclock.validator;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

@@ -3,6 +3,7 @@ package ch.zli.m223.punchclock.service;
 import ch.zli.m223.punchclock.domain.Category;
 import ch.zli.m223.punchclock.domain.Entry;
 import ch.zli.m223.punchclock.repository.CategoryRepository;
+import org.apache.catalina.filters.RemoteIpFilter;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

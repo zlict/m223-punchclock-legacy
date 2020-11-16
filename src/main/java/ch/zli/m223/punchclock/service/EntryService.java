@@ -16,7 +16,7 @@ public class EntryService {
     }
 
     public Entry createEntry(Entry entry) {
-        return entryRepository.saveAndFlush(entry);
+        return entryRepository.save(entry);
     }
 
     public List<Entry> findAll() {

@@ -1,6 +1,6 @@
 package ch.zli.m223.punchclock.domain;
 
-import ch.zli.m223.punchclock.Validator.CheckInCheckOut;
+import ch.zli.m223.punchclock.validator.CheckInCheckOut;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
